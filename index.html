@@ -245,14 +245,16 @@ figure img { display: block; width: 100%; height: auto; border-radius: 6px; }
 .cfos { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
 /* The source frame is 82% empty black, so the window crops to the specimen and
    zooms slightly — at 1:1 the sparse c-Fos signal is too small to read. */
-.cfos-frame { width: 210px; aspect-ratio: 210 / 500; overflow: hidden; border-radius: 4px; background: #000; }
+.cfos-frame { width: var(--cfos); aspect-ratio: 210 / 500; overflow: hidden; border-radius: 4px; background: #000; }
 .cfos-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 53% 50%; display: block; }
-.cfos figcaption { max-width: 210px; margin-top: 0; }
+.cfos figcaption { max-width: var(--cfos); margin-top: 0; }
 figcaption { margin-top: 12px; font-size: 14.5px; line-height: 1.6; color: var(--muted); max-width: 78ch; }
 
 
 /* The c-Fos frame is tall and narrow, so the text runs beside it rather than under. */
-.now-grid { display: grid; grid-template-columns: 210px 1fr; gap: 48px; align-items: start; margin-top: 8px; }
+/* --cfos sets the figure's width, the caption's measure and the grid column at once,
+   so narrowing the figure for a phone is a single number. */
+.now-grid { --cfos: 210px; display: grid; grid-template-columns: var(--cfos) 1fr; gap: 48px; align-items: start; margin-top: 8px; }
 .now-body > p { font-size: 16.5px; color: var(--body); }
 .questions-lead { margin-top: 1.15em; }
 .questions { margin: 10px 0 0; padding-left: 22px; display: grid; gap: 9px; }
@@ -422,6 +424,16 @@ footer p { font-size: 14.5px; color: var(--muted); }
   /* Three columns can't hold at this width; stack name, place, date instead. */
   .venue { grid-template-columns: 1fr; gap: 2px; padding: 12px 0; }
   .v-when { text-align: left; }
+  /* The figure column is a fixed 210px, so every pixel lost here comes out of the
+     prose beside it. Close the gap before the text gets uncomfortably narrow. */
+  .now-grid { gap: 28px; }
+}
+/* A fixed 210px of figure plus the gap comes straight out of the prose beside it:
+   by 700px the text column is down to ~40 characters a line, and on a phone it would
+   be under 100px — a word or two per line. Stack below that, and narrow the figure,
+   since at full width its 500-tall frame fills most of a phone screen on its own. */
+@media (max-width: 700px) {
+  .now-grid { --cfos: 168px; grid-template-columns: 1fr; gap: 26px; }
 }
 @media (max-width: 620px) {
   .wrap { padding: 0 22px; }
@@ -430,7 +442,7 @@ footer p { font-size: 14.5px; color: var(--muted); }
   /* At the large wordmark size the bar is tall enough that pinning it would cover
      most of a phone screen, so let it scroll away here. */
   .masthead { position: static; }
-        .pub-rail { --per: 1; }
+  .pub-rail { --per: 1; }
 }
 </style>
 
