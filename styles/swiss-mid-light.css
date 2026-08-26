@@ -1,0 +1,129 @@
+/* ============================================================
+   SWISS MID / LIGHT HEADINGS, ACCENT IN BOLD
+   Adopted theme. Sentence case throughout, headings at weight
+   400, and every run of accent-coloured text at 600 — so the
+   red carries the emphasis rather than heavy type.
+
+   To go back to bold headings, set font-weight 400 -> 600 on
+   .name, .section-title, .strand h3, .theme h3, .card-title,
+   .res h3 and .card-fig.is-text .t-title below. That is the
+   only difference from the earlier bold variant.
+   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@300;400;500;600&display=swap");
+
+:root {
+  --bg:    #FFFFFF;
+  --ink:   #0B0B0C;
+  --body:  #2A2C2F;
+  --muted: #6B6F75;
+  --rule:  #D6D8DB;
+  --slot:  #F1F2F3;
+  --red:   #D8261B;
+
+  --sans: "Barlow", Helvetica, Arial, sans-serif;
+  --cond: "Barlow Condensed", "Barlow", Helvetica, sans-serif;
+  --page: 1180px;
+}
+
+body { font-family: var(--sans); font-size: 16.5px; line-height: 1.62; letter-spacing: 0; }
+
+h1, h2, h3, h4 { font-family: var(--cond); letter-spacing: 0; }
+
+/* --- masthead: a hard red keyline and uppercase navigation --- */
+.masthead { border-bottom: 3px solid var(--ink); }
+.masthead .wrap { padding-block: 16px; }
+.name {
+  font-family: var(--cond); font-size: clamp(33px, 4.7vw, 57px); line-height: 1; font-weight: 400;
+  text-transform: none; letter-spacing: -.005em;
+}
+.nav a {
+  font-family: var(--cond); font-size: 15px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--ink);
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+.nav a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+/* --- sections announce themselves in oversized condensed caps --- */
+section { padding-block: 76px; }
+section + section { border-top: 1px solid var(--ink); }
+.section-title {
+  font-size: clamp(33px, 4.7vw, 57px); font-weight: 400; line-height: 1.02;
+  text-transform: none; letter-spacing: -.015em; color: var(--ink);
+}
+.section-head {
+  /* Align the *last* orange line to the heading baseline. flex-end lines up the
+     boxes, which leaves the text floating high once the heading has descender
+     space below it; "last baseline" matches the type itself. The flex-end line
+     stays first as a fallback for engines without last-baseline support. */
+  align-items: flex-end;
+  align-items: last baseline;
+  gap: 22px;
+}
+.section-when, .section-role {
+  font-family: var(--cond); font-size: 16px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--red);
+}
+.section-meta { padding-bottom: 0; }
+.section-lede { font-size: 19px; line-height: 1.5; max-width: 860px; }
+
+
+
+
+/* --- previous work --- */
+.theme + .theme { border-top: 1px solid var(--rule); }
+.theme h3 { font-size: 23px; font-weight: 400; line-height: 1.15; letter-spacing: -.005em; }
+.theme-when {
+  font-family: var(--cond); font-weight: 600; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--red);
+}
+.key a { border-left: 2px solid var(--rule); padding-left: 12px; display: block; }
+.key a:hover { border-left-color: var(--red); }
+.k-venue { font-family: var(--cond); text-transform: uppercase; letter-spacing: .06em; }
+
+/* --- publications --- */
+.pub-toggle button {
+  font-family: var(--cond); font-size: 16px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
+  border-bottom: 3px solid transparent;
+}
+.pub-toggle button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--red); }
+.pub-toggle button:hover { color: var(--red); }
+.rail-nav button { border: 2px solid var(--ink); border-radius: 0; color: var(--ink); }
+.rail-nav button:hover:not(:disabled) { background: var(--red); border-color: var(--red); color: #fff; }
+.card-fig { border: 1px solid var(--ink); border-radius: 0; }
+.card:hover .card-fig { border-color: var(--red); box-shadow: 6px 6px 0 var(--red); }
+.card-venue {
+  font-family: var(--cond); font-weight: 600; text-transform: uppercase;
+  letter-spacing: .07em; font-size: 13.5px; color: var(--red);
+}
+.card-venue em { font-style: normal; }
+.card-title { font-family: var(--cond); font-size: 19px; font-weight: 400; line-height: 1.2; }
+.card-fig.is-text { background: var(--slot); border-radius: 0; }
+.card-fig.is-text .t-title { font-family: var(--cond); font-weight: 400; }
+
+/* --- about --- */
+.portrait { border-radius: 0; border: 1px solid var(--ink); }
+
+/* --- talks --- */
+.venue { border-top: 1px solid var(--rule); }
+.venue:first-child { border-top: 2px solid var(--ink); }
+.v-name { font-weight: 500; }
+.v-when { font-family: var(--cond); text-transform: uppercase; letter-spacing: .05em; }
+.venue-media img { border-radius: 0; border: 1px solid var(--ink); }
+
+/* --- code + contact --- */
+.res h3 { font-family: var(--cond); font-size: 18px; font-weight: 400; text-transform: uppercase; }
+.res h3 a { border-bottom: 2px solid var(--red); }
+.contact-grid h3 {
+  font-family: var(--cond); font-weight: 600; text-transform: uppercase;
+  letter-spacing: .12em; color: var(--red);
+}
+footer { border-top: 3px solid var(--ink); }
+
+/* Names in the bio link out to lab sites. In ink they read as plain text, so they
+   take the accent colour — the one signal the rest of the page already uses. */
+.prose a.inline {
+  color: var(--red); font-weight: 500;
+  text-decoration-color: color-mix(in srgb, var(--red) 40%, transparent);
+}
+.prose a.inline:hover { text-decoration-color: var(--red); }

@@ -1,0 +1,16 @@
+# Netlify and Cloudflare Pages read this file. Other hosts ignore it.
+
+/images/*
+  Cache-Control: public, max-age=604800
+
+/styles/*
+  Cache-Control: public, max-age=604800
+
+/data/*
+  Cache-Control: public, max-age=86400
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate

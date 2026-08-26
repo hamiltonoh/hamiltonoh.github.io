@@ -1,0 +1,10 @@
+# Generated single-file copy and theme previews — rebuild with ./build.sh
+dist/
+
+# Source PDFs used to render publication cards. Kept locally, too bulky to version.
+pdfs/
+
+# Original photos, figures, CV. Working material, not part of the site.
+source/
+
+.DS_Store

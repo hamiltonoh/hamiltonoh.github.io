@@ -1,0 +1,136 @@
+/* ============================================================
+   SWISS LAB — International Typographic Style
+   Pure white ground, one signal red, a hard grid, condensed
+   grotesk set tight. Structure is stated in rules and numerals
+   rather than in boxes.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@300;400;500;600&display=swap");
+
+:root {
+  --bg:    #FFFFFF;
+  --ink:   #0B0B0C;
+  --body:  #2A2C2F;
+  --muted: #6B6F75;
+  --rule:  #D6D8DB;
+  --slot:  #F1F2F3;
+  --red:   #D8261B;
+
+  --sans: "Barlow", Helvetica, Arial, sans-serif;
+  --cond: "Barlow Condensed", "Barlow", Helvetica, sans-serif;
+  --page: 1180px;
+}
+
+body { font-family: var(--sans); font-size: 16.5px; line-height: 1.62; letter-spacing: 0; }
+
+h1, h2, h3, h4 { font-family: var(--cond); letter-spacing: 0; }
+
+/* --- masthead: a hard red keyline and uppercase navigation --- */
+.masthead { border-bottom: 3px solid var(--ink); }
+.masthead .wrap { padding-block: 16px; }
+.name {
+  font-family: var(--cond); font-size: clamp(40px, 6vw, 74px); line-height: 1; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .02em;
+}
+.nav a {
+  font-family: var(--cond); font-size: 15px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--ink);
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+.nav a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+/* --- sections announce themselves in oversized condensed caps --- */
+section { padding-block: 76px; }
+section + section { border-top: 1px solid var(--ink); }
+.section-title {
+  font-size: clamp(40px, 6vw, 74px); font-weight: 600; line-height: .95;
+  text-transform: uppercase; letter-spacing: -.01em; color: var(--ink);
+}
+.section-head { align-items: flex-end; gap: 22px; }
+.section-when {
+  font-family: var(--cond); font-size: 16px; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--red); padding-bottom: 10px;
+}
+.section-lede { font-size: 19px; line-height: 1.5; max-width: 60ch; }
+
+.list-head {
+  font-family: var(--cond); font-size: 15px; font-weight: 600;
+  letter-spacing: .14em; color: var(--ink);
+  border-top: 2px solid var(--ink); padding-top: 10px;
+}
+
+/* --- research strands: the numeral is the ornament --- */
+.strands { background: none; border: 0; gap: 0; }
+.strand {
+  border-top: 1px solid var(--rule); padding: 26px 0;
+  grid-template-columns: 76px 1fr;
+}
+.strand:first-child { border-top: 2px solid var(--ink); }
+.strand-n {
+  font-family: var(--cond); font-size: 44px; font-weight: 600; line-height: .8;
+  color: var(--red); padding-top: 2px;
+}
+.strand h3 { font-size: 25px; font-weight: 600; text-transform: uppercase; letter-spacing: .01em; }
+
+.goal { border-left: 4px solid var(--red); padding-left: 22px; }
+.goal-label {
+  font-family: var(--cond); font-weight: 600; letter-spacing: .14em; color: var(--red);
+}
+.goal p { font-family: var(--cond); font-size: 26px; font-weight: 400; line-height: 1.28; }
+
+/* --- previous work --- */
+.theme + .theme { border-top: 1px solid var(--rule); }
+.theme h3 { font-size: 26px; font-weight: 600; text-transform: uppercase; line-height: 1.05; }
+.theme-when {
+  font-family: var(--cond); text-transform: uppercase; letter-spacing: .1em; color: var(--red);
+}
+.key a { border-left: 2px solid var(--rule); padding-left: 12px; display: block; }
+.key a:hover { border-left-color: var(--red); }
+.k-venue { font-family: var(--cond); text-transform: uppercase; letter-spacing: .06em; }
+
+/* --- publications --- */
+.pub-toggle button {
+  font-family: var(--cond); font-size: 16px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
+  border-bottom: 3px solid transparent;
+}
+.pub-toggle button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--red); }
+.pub-toggle button:hover { color: var(--red); }
+.rail-nav button { border: 2px solid var(--ink); border-radius: 0; color: var(--ink); }
+.rail-nav button:hover:not(:disabled) { background: var(--red); border-color: var(--red); color: #fff; }
+.card-fig { border: 1px solid var(--ink); border-radius: 0; }
+.card:hover .card-fig { border-color: var(--red); box-shadow: 6px 6px 0 var(--red); }
+.card-venue {
+  font-family: var(--cond); text-transform: uppercase; letter-spacing: .07em;
+  font-size: 13.5px; color: var(--red);
+}
+.card-venue em { font-style: normal; }
+.card-title { font-family: var(--cond); font-size: 20px; font-weight: 500; line-height: 1.2; }
+.card-fig.is-text { background: var(--slot); border-radius: 0; }
+.card-fig.is-text .t-title { font-family: var(--cond); font-weight: 600; text-transform: uppercase; }
+
+/* --- about --- */
+.portrait { border-radius: 0; border: 1px solid var(--ink); }
+.about .role {
+  font-family: var(--cond); text-transform: uppercase; letter-spacing: .09em;
+  font-size: 15px; color: var(--red);
+}
+.fact { border-top: 1px solid var(--rule); }
+.fact dt { font-family: var(--cond); text-transform: uppercase; letter-spacing: .06em; color: var(--ink); }
+.awards .a-year { font-family: var(--cond); color: var(--red); font-weight: 600; }
+
+/* --- talks --- */
+.venue { border-top: 1px solid var(--rule); }
+.venue:first-child { border-top: 2px solid var(--ink); }
+.v-name { font-weight: 500; }
+.v-when { font-family: var(--cond); text-transform: uppercase; letter-spacing: .05em; }
+.venue-media img { border-radius: 0; border: 1px solid var(--ink); }
+
+/* --- code + contact --- */
+.res h3 { font-family: var(--cond); font-size: 20px; font-weight: 600; text-transform: uppercase; }
+.res h3 a { border-bottom: 2px solid var(--red); }
+.contact-grid h3 {
+  font-family: var(--cond); text-transform: uppercase; letter-spacing: .12em; color: var(--red);
+}
+.slot { border-radius: 0; border: 1px solid var(--rule); }
+footer { border-top: 3px solid var(--ink); }

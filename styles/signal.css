@@ -1,0 +1,123 @@
+/* ============================================================
+   SIGNAL — between the original and Swiss Lab
+   Keeps the white ground and the quiet reading rhythm of the
+   original, but gives the page a spine: a firmer typeface, real
+   weight in the headings, and one red used sparingly for dates,
+   numerals and small labels. Headings stay sentence case and
+   moderately sized — the emphasis comes from weight and rules,
+   not from scale.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap");
+
+:root {
+  --bg:    #FFFFFF;
+  --ink:   #16181A;
+  --body:  #33373B;
+  --muted: #6A7075;
+  --rule:  #DCDFE1;
+  --slot:  #F2F3F4;
+  --red:   #C2301F;          /* deeper than a signal red; reads as ink, not alarm */
+
+  --sans: "Barlow", -apple-system, Helvetica, Arial, sans-serif;
+  --page: 1140px;
+}
+
+body { font-family: var(--sans); font-size: 16.5px; line-height: 1.62; }
+h1, h2, h3, h4 { font-family: var(--sans); letter-spacing: -.005em; }
+
+/* --- masthead: a firmer keyline, small caps navigation --- */
+.masthead { border-bottom: 2px solid var(--ink); }
+.name { font-size: clamp(28px, 3.4vw, 40px); line-height: 1; font-weight: 600; letter-spacing: -.01em; }
+.nav a {
+  font-size: 14px; font-weight: 500; text-transform: uppercase;
+  letter-spacing: .07em; color: var(--muted);
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+.nav a:hover { color: var(--ink); border-bottom-color: var(--red); }
+
+/* --- sections: moderate size, real weight, sentence case --- */
+.section-title {
+  font-size: clamp(28px, 3.4vw, 40px); font-weight: 600; line-height: 1.1;
+  letter-spacing: -.018em; color: var(--ink);
+}
+.section-head { align-items: baseline; gap: 16px; }
+.section-when {
+  font-size: 13px; font-weight: 500; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--red);
+}
+.section-lede { font-size: 18px; line-height: 1.6; }
+
+.list-head {
+  font-size: 12.5px; font-weight: 600; letter-spacing: .12em; color: var(--ink);
+  border-top: 2px solid var(--ink); padding-top: 9px;
+}
+
+/* --- current work --- */
+.strands { background: none; border: 0; gap: 0; }
+.strand { border-top: 1px solid var(--rule); padding: 24px 0; grid-template-columns: 40px 1fr; }
+.strand:first-child { border-top: 2px solid var(--ink); }
+.strand-n { font-size: 17px; font-weight: 600; color: var(--red); padding-top: 2px; }
+.strand h3 { font-size: 19px; font-weight: 600; }
+.strand p { color: var(--body); }
+
+.goal { border-left: 3px solid var(--red); padding-left: 20px; }
+.goal-label { font-size: 12.5px; font-weight: 600; letter-spacing: .12em; color: var(--red); }
+.goal p { font-size: 19px; font-weight: 400; line-height: 1.5; color: var(--ink); }
+
+/* --- previous work --- */
+.theme h3 { font-size: 20px; font-weight: 600; line-height: 1.28; }
+.theme-when {
+  font-size: 12.5px; font-weight: 500; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--red);
+}
+.key a { border-left: 2px solid var(--rule); padding-left: 12px; display: block; }
+.key a:hover { border-left-color: var(--red); }
+.k-venue { font-weight: 500; }
+
+/* --- publications --- */
+.pub-toggle button {
+  font-size: 13.5px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .07em; color: var(--muted); border-bottom: 2px solid transparent;
+}
+.pub-toggle button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--red); }
+.pub-toggle button:hover { color: var(--ink); }
+.rail-nav button { border: 1.5px solid var(--ink); border-radius: 2px; color: var(--ink); }
+.rail-nav button:hover:not(:disabled) { background: var(--ink); color: #fff; }
+
+.card-fig { border: 1px solid #C6CACD; border-radius: 2px; }
+.card:hover .card-fig { border-color: var(--red); }
+.card-venue {
+  font-size: 12.5px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--red);
+}
+.card-venue em { font-style: normal; }
+.card-title { font-size: 17px; font-weight: 500; line-height: 1.34; }
+.card-fig.is-text .t-venue { font-weight: 600; letter-spacing: .09em; color: var(--red); }
+.card-fig.is-text .t-title { font-weight: 500; }
+
+/* --- about --- */
+.portrait { border-radius: 2px; }
+.about .role {
+  font-size: 13px; font-weight: 500; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--red);
+}
+.fact dt { font-weight: 500; color: var(--ink); }
+.fact dd { color: var(--body); }
+.awards .a-year { font-weight: 600; color: var(--red); }
+
+/* --- talks --- */
+.venue:first-child { border-top: 2px solid var(--ink); }
+.v-name { font-weight: 500; color: var(--ink); }
+.venue-media img { border-radius: 2px; }
+.venue-media span { font-weight: 500; color: var(--red); }
+
+/* --- code + contact --- */
+.res h3 { font-size: 16.5px; font-weight: 600; }
+.res h3 a { border-bottom: 2px solid var(--red); }
+.contact-grid h3 {
+  font-size: 12.5px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--red);
+}
+.slot { border-radius: 2px; }
+footer { border-top: 2px solid var(--ink); }
