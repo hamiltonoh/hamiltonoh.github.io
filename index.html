@@ -279,6 +279,9 @@ figcaption { margin-top: 12px; font-size: 14.5px; line-height: 1.6; color: var(-
 .key a:hover { color: var(--ink); }
 .key .k-venue { color: var(--muted); }
 .key a:hover .k-title { text-decoration: underline; text-underline-offset: 3px; }
+/* Byline under each key paper, filled in by script — see keyPaperBylines() below. */
+.k-authors { display: block; margin-top: 4px; font-size: 13.5px; line-height: 1.5; color: var(--muted); }
+.k-authors b { color: var(--body); font-weight: 500; }
 
 /* ---------- publications ---------- */
 .pub-bar { display: flex; align-items: baseline; justify-content: space-between; gap: 24px 32px; flex-wrap: wrap; margin-bottom: 40px; }
@@ -694,7 +697,7 @@ footer p { font-size: 14.5px; color: var(--muted); }
         <li><cite><a href="https://doi.org/10.1126/scitranslmed.adx4852">Alzheimer’s disease proteome-wide association study implicates adaptive immunity and identifies risk genes LILRB1 and SIRPA</a></cite>. Walker KA, Blew C, Duggan MR, … <b>Oh HS</b>, … Schlosser P. <em>Science Translational Medicine 2026</em>.</li>
         <li><cite><a href="https://doi.org/10.1038/s41591-025-03834-0">The Global Neurodegeneration Proteomics Consortium: biomarker and drug target discovery for common neurodegenerative diseases and aging</a></cite>. Imam F, Saloner R, Vogel JW, … <b>Oh HS</b>, … The Global Neurodegeneration Proteomics Consortium (GNPC). <em>Nature Medicine 2025</em>.</li>
         <li><cite><a href="https://doi.org/10.1038/s41591-025-03565-2">A cerebrospinal fluid synaptic protein biomarker for prediction of cognitive resilience versus decline in Alzheimer’s disease</a></cite>. <b>Oh HS</b>, Urey DY, Karlsson L, … Wyss-Coray T. <em>Nature Medicine 2025</em>.</li>
-        <li><cite><a href="https://doi.org/10.1038/s41591-025-03798-1">Plasma proteomics links brain and immune system aging with healthspan and longevity</a></cite>. <b>Oh HS</b>, Guen YL, Rappoport N, … Wyss-Coray T. <em>Nature Medicine 2025</em>.</li>
+        <li><cite><a href="https://doi.org/10.1038/s41591-025-03798-1">Plasma proteomics links brain and immune system aging with healthspan and longevity</a></cite>. <b>Oh HS</b>, Le Guen Y, Rappoport N, … Wyss-Coray T. <em>Nature Medicine 2025</em>.</li>
         <li><cite><a href="https://doi.org/10.1016/j.neuron.2025.02.014">Multi-cohort cerebrospinal fluid proteomics identifies robust molecular signatures across the Alzheimer disease continuum</a></cite>. Ali M, Timsina J, Western D, … <b>Oh HS</b>, … Cruchaga C. <em>Neuron 2025</em>.</li>
         <li><cite><a href="https://doi.org/10.1016/j.landig.2025.01.006">Proteomic organ-specific ageing signatures and 20-year risk of age-related diseases: the Whitehall II observational cohort study</a></cite>. Kivimäki M, Frank P, Pentti J, … <b>Oh HS</b>, … Partridge L. <em>The Lancet Digital Health 2025</em>.</li>
         <li><cite><a href="https://doi.org/10.1038/s41591-025-03831-3">Disruption of the cerebrospinal fluid–plasma protein balance in cognitive impairment and aging</a></cite>. Farinas A, Rutledge J, Bot VA, … <b>Oh HS</b>, … Wyss-Coray T. <em>Nature Medicine 2025</em>.</li>
@@ -706,7 +709,7 @@ footer p { font-size: 14.5px; color: var(--muted); }
         <li><cite><a href="https://doi.org/10.1038/s41586-023-06802-1">Organ aging signatures in the plasma proteome track health and disease</a></cite>. <b>Oh HS</b>, Rutledge J, Nachun D, … Wyss-Coray T. <em>Nature 2023</em>.</li>
         <li><cite><a href="https://doi.org/10.1126/scitranslmed.abq5923">Proteomics of brain, CSF, and plasma identifies molecular signatures for distinguishing sporadic and genetic Alzheimer’s disease</a></cite>. Sung YJ, Yang C, Norton J, … <b>Oh HS</b>, … Cruchaga C. <em>Science Translational Medicine 2023</em>.</li>
         <li><cite><a href="https://doi.org/10.1038/s41576-022-00511-7">Measuring biological age using omics data</a></cite>. Rutledge J, <b>Oh HS</b>, Wyss-Coray T. <em>Nature Reviews Genetics 2022</em>.</li>
-        <li><cite><a href="https://doi.org/10.1016/j.cell.2022.11.019">Cerebrospinal fluid immune dysregulation during healthy brain aging and cognitive impairment</a></cite>. Piehl N, Olst LV, Ramakrishnan A, … <b>Oh HS</b>, … Gate D. <em>Cell 2022</em>.</li>
+        <li><cite><a href="https://doi.org/10.1016/j.cell.2022.11.019">Cerebrospinal fluid immune dysregulation during healthy brain aging and cognitive impairment</a></cite>. Piehl N, van Olst L, Ramakrishnan A, … <b>Oh HS</b>, … Gate D. <em>Cell 2022</em>.</li>
         <li><cite><a href="https://doi.org/10.1126/science.abf7266">CD4+ T cells contribute to neurodegeneration in Lewy body dementia</a></cite>. Gate D, Tapp E, Leventhal O, … <b>Oh HS</b>, … Wyss-Coray T. <em>Science 2021</em>.</li>
         <li><cite><a href="https://doi.org/10.1186/s13024-021-00423-w">Methods to investigate intrathecal adaptive immunity in neurodegeneration</a></cite>. <b>Oh HS</b>, Leventhal O, Channappa D, Henderson VW, Wyss-Coray T, Lehallier B, Gate D. <em>Molecular Neurodegeneration 2021</em>.</li>
         <li><cite><a href="https://doi.org/10.64898/2026.05.23.727339">Plasma proteomics reveals divergent sex-specific senescence and bone biology signatures across neurodegenerative diseases</a></cite>. Kaipa S, Zhai T, Meka SRK, … <b>Oh HS</b>, … Suryadevara V. <em>bioRxiv / medRxiv 2026</em>.</li>
@@ -842,12 +845,21 @@ footer p { font-size: 14.5px; color: var(--muted); }
   // Consortia are credited as a body, not a person, so they keep their full name.
   var GROUP = /consorti|collaborat|network|initiative|investigator|study group|\bgroup\b|working party/i;
 
+  /* Surname particles. Taking only the last word as the family name turns
+     "Yann Le Guen" into "Guen YL" and "Sven J. van der Lee" into "Lee SJVD", so any
+     run of these immediately before the last word is pulled into the surname. */
+  var PARTICLE = /^(?:de|del|della|der|di|do|dos|da|das|du|la|le|van|von|ter|ten|af|av|bin|ibn|al|el)$/i;
+
   function initials(name) {
     if (SELF.test(name.trim())) return SELF_AS;
     if (GROUP.test(name)) return esc(name.trim());
     var parts = name.trim().split(/\s+/);
     if (parts.length < 2) return esc(name);
     var family = parts.pop();
+    // Stop at one remaining word so a name that is all particles still has a given name.
+    while (parts.length > 1 && PARTICLE.test(parts[parts.length - 1])) {
+      family = parts.pop() + " " + family;
+    }
     var given = parts.map(function (p) {
       return p.split("-").map(function (piece) { return piece.charAt(0); }).join("");
     }).join("");
@@ -1040,6 +1052,29 @@ footer p { font-size: 14.5px; color: var(--muted); }
     });
     showView("first");
   }
+
+  /* ---------------- key papers in Previously ---------------- */
+  /* Every key-paper link already carries its DOI in the href, so its byline is looked
+     up rather than typed out a second time: nothing to keep in step when an author
+     list changes, and it renders identically to the byline under a publication card.
+     A link whose DOI isn't in the data is left exactly as written. */
+  (function keyPaperBylines() {
+    var byDoi = {};
+    pubs.concat(preprints).forEach(function (p) { byDoi[p.doi.toLowerCase()] = p; });
+
+    [].forEach.call(document.querySelectorAll('.key a[href*="doi.org/"]'), function (link) {
+      var href = link.getAttribute("href");
+      var doi = decodeURIComponent(href.slice(href.indexOf("doi.org/") + 8));
+      var pub = byDoi[doi.toLowerCase()];
+      if (!pub) return;
+      var line = authorLine(pub);
+      if (!line) return;
+      var byline = document.createElement("span");
+      byline.className = "k-authors";
+      byline.innerHTML = line;
+      link.appendChild(byline);
+    });
+  })();
 })();
 </script>
 

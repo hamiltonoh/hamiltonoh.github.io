@@ -84,6 +84,13 @@ def escape(text):
                      .replace(">", "&gt;").replace('"', "&quot;"))
 
 
+# Surname particles. Taking only the last word as the family name turns "Yann Le Guen"
+# into "Guen YL" and "Sven J. van der Lee" into "Lee SJVD". Keep in step with PARTICLE
+# in index.html.
+PARTICLE = {"de", "del", "della", "der", "di", "do", "dos", "da", "das", "du", "la",
+            "le", "van", "von", "ter", "ten", "af", "av", "bin", "ibn", "al", "el"}
+
+
 def initials(name):
     """Mirror of initials() in index.html, so both lists read identically."""
     name = name.strip()
@@ -95,6 +102,9 @@ def initials(name):
     if len(parts) < 2:
         return escape(name)
     family = parts.pop()
+    # Stop at one remaining word so a name that is all particles still has a given name.
+    while len(parts) > 1 and parts[-1].lower() in PARTICLE:
+        family = f"{parts.pop()} {family}"
     given = "".join(piece[0] for part in parts for piece in part.split("-") if piece)
     return escape(f"{family} {given.upper()}")
 
