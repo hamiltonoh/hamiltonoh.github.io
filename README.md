@@ -98,8 +98,14 @@ fills those gaps. A local PDF always wins over a fetched one.
 All near the top of `scripts/refresh_publications.py`:
 
 - `EXTRA_DOIS` — papers missing from ORCID.
-- `CO_FIRST_DOIS` — papers where you are joint first author. Crossref records author
-  order but not shared first authorship, so this cannot be detected.
+- `CO_FIRST` — papers whose byline carries an asterisk, written as
+  `"<doi>": <how many leading authors share first authorship>`. Crossref records author
+  order but not shared first authorship, so nothing can detect this; it has to be typed.
+
+  **Add a line here whenever a new paper has co-first authors** — including papers where
+  you are not one of them. The site then prints a `*` after each of those names wherever
+  the paper appears, adds *\*equal contribution* to the card, and keeps the paper in the
+  "First author" view when you are the second of two co-firsts.
 - `SUPERSEDED` — maps a preprint DOI to its published version, for cases where the title
   changed too much on acceptance for automatic matching.
 

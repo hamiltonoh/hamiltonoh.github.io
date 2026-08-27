@@ -706,9 +706,9 @@ footer p { font-size: 14.5px; color: var(--muted); }
         <li><cite><a href="https://doi.org/10.1038/s41588-024-01972-8">Proteogenomic analysis of human cerebrospinal fluid identifies neurologically relevant regulation and implicates causal proteins for Alzheimer’s disease</a></cite>. Western D, Timsina J, Wang L, … <b>Oh HS</b>, … Cruchaga C. <em>Nature Genetics 2024</em>.</li>
         <li><cite><a href="https://doi.org/10.1186/s13024-023-00687-4">Proteo-genomics of soluble TREM2 in cerebrospinal fluid provides novel insights and identifies novel modulators for Alzheimer’s disease</a></cite>. Wang L, Nykänen NP, Western D, … <b>Oh HS</b>, … Cruchaga C. <em>Molecular Neurodegeneration 2024</em>.</li>
         <li><cite><a href="https://doi.org/10.1093/pnasnexus/pgae499">Disagreement on foundational principles of biological aging</a></cite>. Gladyshev VN, Anderson B, Barlit H, … <b>Oh HS</b>, … Zhavoronkov A. <em>PNAS Nexus 2024</em>.</li>
-        <li><cite><a href="https://doi.org/10.1038/s41586-023-06802-1">Organ aging signatures in the plasma proteome track health and disease</a></cite>. <b>Oh HS</b>, Rutledge J, Nachun D, … Wyss-Coray T. <em>Nature 2023</em>.</li>
+        <li><cite><a href="https://doi.org/10.1038/s41586-023-06802-1">Organ aging signatures in the plasma proteome track health and disease</a></cite>. <b>Oh HS*</b>, Rutledge J*, Nachun D, … Wyss-Coray T. <em>Nature 2023 (* equal contribution)</em>.</li>
         <li><cite><a href="https://doi.org/10.1126/scitranslmed.abq5923">Proteomics of brain, CSF, and plasma identifies molecular signatures for distinguishing sporadic and genetic Alzheimer’s disease</a></cite>. Sung YJ, Yang C, Norton J, … <b>Oh HS</b>, … Cruchaga C. <em>Science Translational Medicine 2023</em>.</li>
-        <li><cite><a href="https://doi.org/10.1038/s41576-022-00511-7">Measuring biological age using omics data</a></cite>. Rutledge J, <b>Oh HS</b>, Wyss-Coray T. <em>Nature Reviews Genetics 2022</em>.</li>
+        <li><cite><a href="https://doi.org/10.1038/s41576-022-00511-7">Measuring biological age using omics data</a></cite>. Rutledge J*, <b>Oh HS*</b>, Wyss-Coray T. <em>Nature Reviews Genetics 2022 (* equal contribution)</em>.</li>
         <li><cite><a href="https://doi.org/10.1016/j.cell.2022.11.019">Cerebrospinal fluid immune dysregulation during healthy brain aging and cognitive impairment</a></cite>. Piehl N, van Olst L, Ramakrishnan A, … <b>Oh HS</b>, … Gate D. <em>Cell 2022</em>.</li>
         <li><cite><a href="https://doi.org/10.1126/science.abf7266">CD4+ T cells contribute to neurodegeneration in Lewy body dementia</a></cite>. Gate D, Tapp E, Leventhal O, … <b>Oh HS</b>, … Wyss-Coray T. <em>Science 2021</em>.</li>
         <li><cite><a href="https://doi.org/10.1186/s13024-021-00423-w">Methods to investigate intrathecal adaptive immunity in neurodegeneration</a></cite>. <b>Oh HS</b>, Leventhal O, Channappa D, Henderson VW, Wyss-Coray T, Lehallier B, Gate D. <em>Molecular Neurodegeneration 2021</em>.</li>
@@ -885,10 +885,13 @@ footer p { font-size: 14.5px; color: var(--muted); }
         .filter(function (v, i, a) { return i === 0 || v !== a[i - 1]; });
     }
 
+    var shared = pub.shared || 0;
     var out = "", prev = -1;
     keep.forEach(function (i, k) {
       if (k) out += (i === prev + 1) ? ", " : ", … ";
       var mark = initials(names[i]);
+      // Journal convention: a * after each author who shares first authorship.
+      if (i < shared) mark += "*";
       out += (pub.pos && i === pub.pos - 1) ? "<b>" + mark + "</b>" : mark;
       prev = i;
     });
@@ -903,7 +906,7 @@ footer p { font-size: 14.5px; color: var(--muted); }
   function venueLine(pub) {
     var venue = pub.preprint ? esc(pub.server || "Preprint") : "<em>" + esc(pub.journal) + "</em>";
     if (pub.year) venue += " · " + pub.year;
-    if (pub.cofirst) venue += " · co-first author";
+    if (pub.shared) venue += " · *equal contribution";
     return venue;
   }
 

@@ -51,12 +51,17 @@ SUPERSEDED = {
     "10.1101/2025.03.01.640978":  "10.1016/j.celrep.2025.116624",  # Cerebellar microglia
 }
 
-# Crossref records author order but not shared first authorship, so the asterisked
-# papers from the NIH biosketch are listed here by DOI. Without this, the site's
-# "First author" view silently drops the co-first papers.
-CO_FIRST_DOIS = {
-    "10.1038/s41576-022-00511-7",   # Rutledge J*, Oh H*  — Nature Reviews Genetics 2022
-    "10.1038/s41586-023-06802-1",   # Oh HS*, Rutledge J* — Nature 2023
+# Crossref records author order but not shared first authorship, so papers whose
+# bylines carry an asterisk are listed here by hand: DOI -> how many of the leading
+# authors share first authorship. The site puts a * after each of those names and a
+# note on the card, and without this the "First author" view silently drops any paper
+# where Hamilton is second of two co-firsts.
+#
+# ADD A LINE HERE whenever a new paper has co-first authors — including papers where
+# Hamilton is not one of them. Two is the usual count; use whatever the byline says.
+CO_FIRST = {
+    "10.1038/s41576-022-00511-7": 2,   # Rutledge J*, Oh H*  — Nature Reviews Genetics 2022
+    "10.1038/s41586-023-06802-1": 2,   # Oh HS*, Rutledge J* — Nature 2023
 }
 
 
@@ -115,11 +120,15 @@ def crossref(doi):
     authors = [name for name in map(author_name, msg.get("author", [])) if name]
     position = next((i + 1 for i, a in enumerate(authors) if "Oh" in a and ("Hamilton" in a or "H." in a)), None)
     journal = clean((msg.get("container-title") or [""])[0])
-    co_first = doi in CO_FIRST_DOIS
+    # Hamilton is a co-first author only if he is actually among the shared positions,
+    # not merely on a paper that has them.
+    shared = CO_FIRST.get(doi, 0)
+    co_first = bool(position and position <= shared)
     return {
         "doi": doi,
         "first": position == 1 or co_first,
         "cofirst": co_first,
+        "shared": shared,
         "title": clean(msg.get("title", [""])[0]),
         "journal": journal or "Preprint",
         "year": msg.get("issued", {}).get("date-parts", [[None]])[0][0],

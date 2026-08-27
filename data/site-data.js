@@ -43,7 +43,8 @@ window.SITE_DATA = {
    "cites": 26,
    "preprint": false,
    "abstract": "Neurodegenerative diseases affect 1 in 12 people globally and remain incurable. Central to their pathogenesis is a loss of neuronal protein maintenance and the accumulation of protein aggregates with ageing1,2. Here we engineered bioorthogonal tools3 that enabled us to tag the nascent neuronal proteome and study its turnover with ageing, its propensity to aggregate and its interaction with microglia. We show that neuronal protein half-life approximately doubles on average between 4-month-old and 24-month-old mice, with the stability of individual proteins differing among brain regions. Furthermore, we describe the aged neuronal 'aggregome', which encompasses 1,726 proteins, nearly half of which show reduced degradation with age. The aggregome includes well-known proteins linked to diseases and numerous proteins previously not associated with neurodegeneration. Notably, we demonstrate that neuronal proteins accumulate in aged microglia, with 54% also displaying reduced degradation and/or aggregation with age. Among these proteins, synaptic proteins are highly enriched, which suggests that there is a cascade of events that emerge from impaired synaptic protein turnover and aggregation to the disposal of these proteins, possibly through microglial engulfment of synapses. These findings reveal the substantial loss of neuronal proteome maintenance with ageing, which could be causal for age-related synapse loss and cognitive decline.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s41591-026-04446-y",
@@ -75,7 +76,8 @@ window.SITE_DATA = {
    "cites": 8,
    "preprint": false,
    "abstract": "Abstract Aging is asynchronous across cells and organs. Here we tested whether plasma proteomics can be used to analyze cell type-specific aging. From analyses of over 7,000 plasma proteins measured in 60,542 individuals, we developed machine learning models to estimate the biological age of over 40 cell types spanning neuronal, immune, glial, endocrine, epithelial and musculoskeletal origins. We observed that 20\u201325% of individuals exhibited accelerated aging in a single cell type and 1\u20133% in 10 or more cell types. Cellular aging signatures were associated with disease status and predicted incident disease and mortality over 15 years of follow-up. Individuals with the APOE4 genotype showed older astrocytes but younger macrophages compared to APOE3 carriers, whereas the APOE2 genotype had inverse associations. Moreover, extreme astrocyte aging tripled the risk of incident Alzheimer\u2019s Disease in individuals with two APOE4 alleles, while youthful astrocytes reduced risk. Individuals with extremely aged compared to youthful skeletal myocytes exhibited a 12.7-fold higher risk of developing amyotrophic lateral sclerosis. In individuals who smoked, extreme respiratory epithelial cell aging was associated with a 58% higher lung cancer risk compared to smoking alone. Specific cellular vulnerabilities and cumulative cellular aging burden influenced survival, with youthful immune and neuronal cell types conferring protective effects. Finally, we developed a polycellular aging risk score that stratified mortality risk across cohorts and proteomics platforms. These findings establish a framework for quantifying human physiology at cellular resolution, revealing heterogeneous aging trajectories and their impact on disease susceptibility and resilience.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s41586-026-10524-5",
@@ -119,7 +121,8 @@ window.SITE_DATA = {
    "cites": 5,
    "preprint": false,
    "abstract": "Optimal sleep has a vital role in promoting healthy ageing and enhancing longevity. Here we propose Sleep Chart to assess the relationship between self-reported sleep duration and 23 biological ageing clocks derived from in vivo imaging1, plasma proteomics2 and metabolomics3. First, a systemic, U-shaped pattern emerges between sleep duration and biological age gaps across nine brain and body systems and three omics technologies. The sample-specific lowest biological age gaps are achieved between 6.4 and 7.8 h of sleep duration, varying by organ and sex in the UK Biobank (aged 37-84 years). Furthermore, short ( 8 h) sleep duration, compared with a normal sleep duration (6-8 h), are associated with increased risk of systemic diseases beyond the brain and all-cause mortality, with evidence from genetic correlations and time-to-incident survival predictions, such as depression and diabetes. Finally, the pathways by which long and short sleep duration are associated with late-life depression differ: ageing clocks may partially mediate the pathway for long sleep duration, while short sleep duration shows a more direct link. Although Mendelian randomization does not provide strong evidence that disease causally affects sleep, it cannot completely exclude such reverse causality. Our findings suggest a cross-organ, multi-omics U-shaped relationship between sleep duration and biological ageing clocks, highlighting the potential of sleep optimization to promote healthy ageing, lower disease risk and extend longevity.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1016/j.neuron.2026.02.035",
@@ -168,7 +171,8 @@ window.SITE_DATA = {
    "cites": 3,
    "preprint": false,
    "abstract": "Neurodegenerative diseases (NDs), including Alzheimer's disease (AD), Parkinson's disease (PD), dementia with Lewy bodies (DLB), and frontotemporal dementia (FTD), share overlapping clinical and pathological features. We analyzed cerebrospinal fluid (CSF) and plasma proteomes from 2,705 and 3,009 samples, respectively, across these NDs, identifying disease-specific and shared molecular signatures. CSF showed more disease-associated proteins than plasma, with AD and DLB exhibiting the strongest cross-tissue similarity. Pathway analyses revealed shared dysregulation of immune-related processes in CSF and plasma across the NDs, as well as disease-specific impairment of glycosylation and apoptotic pathways in AD; ATF4 and PERK signaling in PD; fibroblast growth factor receptor (FGFR) and interleukin signaling in DLB; and glycoprotein hormones disruption in FTD. We developed disease-specific predictive models showing high accuracy (area under the curve [AUC]: 0.81-0.95 in CSF and 0.80-0.89 in plasma). These findings reveal distinct and convergent mechanisms across NDs, highlighting potential biomarkers and pathways for diagnostic and therapeutic strategies in neurodegeneration.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1002/advs.202513872",
@@ -208,7 +212,8 @@ window.SITE_DATA = {
    "cites": 2,
    "preprint": false,
    "abstract": "ABSTRACT Apolipoprotein E (APOE) \u03b54 is the strongest genetic risk factor for Alzheimer's disease (AD). However, it is known that other pathways independent of APOE also play a role in AD. Disentangling APOE\u2010dependent and independent effects is instrumental for understanding the biology of AD. We conducted an APOE\u2010stratified multi\u2010omic analysis in multiple large datasets to identify AD\u2010associated plasma proteins and metabolites. More than 64% of the identified proteins were not found in non\u2010 APOE stratified studies, and 17% of the proteins showed APOE\u2010specific trends. Mitochondrial dysfunction was associated in AD independently of APOE and was accompanied by disruptions in glucose and lipid metabolism and cell death and increased in inflammatory signaling activation. Lipid upregulation was found in AD cases when compared with controls with the same APOE genotype, indicating that additional factors beyond APOE affect lipid regulation and AD risk. These findings may be informative in guiding the development of effective medications for AD.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1126/scitranslmed.adx4852",
@@ -255,7 +260,8 @@ window.SITE_DATA = {
    "cites": 0,
    "preprint": false,
    "abstract": "The rapid expansion of plasma proteomic data and protein quantitative trait loci (pQTLs) provides an opportunity to identify genes that confer disease risk through their effect on plasma protein abundance. We conducted an Alzheimer\u2019s disease (AD) proteome-wide association study (PWAS) integrating publicly available plasma cis-pQTL data (1348 European American and 1385 African American genetically determined protein models) with AD dementia GWAS summary statistics. Whereas the African American PWAS identified one candidate [apolipoprotein E (APOE)] and multiple suggestive genes, the European American PWAS identified 18 genes with putative causal relationships with AD through cis regulation of plasma protein abundance. Thirteen of these candidate genes were additionally supported by colocalization and complementary causal-inference analyses such as summary data\u2013based Mendelian randomization. Four of these proteins were not previously detected in AD GWAS [complement decay-accelerating factor (CD55), leukocyte immunoglobulin-like receptor B1 (LILRB1), scavenger receptor class A member 5 (SCARA5), and signal regulatory protein alpha (SIRPA)]. A subset of candidate gene-associated proteins was associated with 8- and 20-year dementia risk, markers of AD pathology, and a CSF proteomic signature enriched for immune and metabolic processes. Putative causal proteins were enriched for adaptive (lymphocyte-mediated) immunity and, compared with GWAS candidates, showed less enrichment for synaptic and amyloid regulatory processes. LILRB1 and SIRPA, two immunoregulatory proteins not previously implicated in AD GWAS, showed the strongest mechanistic link to AD in the European American PWAS. These results shed additional light on AD etiology and enable the prioritization of potential AD therapeutic targets in peripheral circulation.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s41591-025-03834-0",
@@ -325,7 +331,8 @@ window.SITE_DATA = {
    "cites": 123,
    "preprint": false,
    "abstract": "Abstract More than 57 million people globally suffer from neurodegenerative diseases, a figure expected to double every 20 years. Despite this growing burden, there are currently no cures, and treatment options remain limited due to disease heterogeneity, prolonged preclinical and prodromal phases, poor understanding of disease mechanisms, and diagnostic challenges. Identifying novel biomarkers is crucial for improving early detection, prognosis, staging and subtyping of these conditions. High-dimensional molecular studies in biofluids (\u2018omics\u2019) offer promise for scalable biomarker discovery, but challenges in assembling large, diverse datasets hinder progress. To address this, the Global Neurodegeneration Proteomics Consortium (GNPC)\u2014a public\u2013private partnership\u2014established one of the world\u2019s largest harmonized proteomic datasets. It includes approximately 250 million unique protein measurements from multiple platforms from more than 35,000 biofluid samples (plasma, serum and cerebrospinal fluid) contributed by 23 partners, alongside associated clinical data spanning Alzheimer\u2019s disease (AD), Parkinson\u2019s disease (PD), frontotemporal dementia (FTD) and amyotrophic lateral sclerosis (ALS). This dataset is accessible to GNPC members via the Alzheimer\u2019s Disease Data Initiative\u2019s AD Workbench, a secure cloud-based environment, and will be available to the wider research community on 15 July 2025. Here we present summary analyses of the plasma proteome revealing disease-specific differential protein abundance and transdiagnostic proteomic signatures of clinical severity. Furthermore, we describe a robust plasma proteomic signature of APOE \u03b54 carriership, reproducible across AD, PD, FTD and ALS, as well as distinct patterns of organ aging across these conditions. This work demonstrates the power of international collaboration, data sharing and open science to accelerate discovery in neurodegeneration research.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s41591-025-03565-2",
@@ -380,7 +387,8 @@ window.SITE_DATA = {
    "cites": 111,
    "preprint": false,
    "abstract": "Rates of cognitive decline in Alzheimer's disease (AD) are extremely heterogeneous. Although biomarkers for amyloid-beta (A\u03b2) and tau proteins, the hallmark AD pathologies, have improved pathology-based diagnosis, they explain only 20-40% of the variance in AD-related cognitive impairment (CI). To discover novel biomarkers of CI in AD, we performed cerebrospinal fluid (CSF) proteomics on 3,397 individuals from six major prospective AD case-control cohorts. Synapse proteins emerged as the strongest correlates of CI, independent of A\u03b2 and tau. Using machine learning, we derived the CSF YWHAG:NPTX2 synapse protein ratio, which explained 27% of the variance in CI beyond CSF pTau181:A\u03b242, 11% beyond tau positron emission tomography, and 28% beyond CSF neurofilament, growth-associated protein 43 and neurogranin in A\u03b2+ and phosphorylated tau+ (A+T1+) individuals. CSF YWHAG:NPTX2 also increased with normal aging and 20 years before estimated symptom onset in carriers of autosomal dominant AD mutations. Regarding cognitive prognosis, CSF YWHAG:NPTX2 predicted conversion from A+T1+ cognitively normal to mild cognitive impairment (standard deviation increase hazard ratio = 3.0, P = 7.0 \u00d7 10-4) and A+T1+ mild cognitive impairment to dementia (standard deviation increase hazard ratio = 2.2, P = 8.2 \u00d7 10-16) over a 15-year follow-up, adjusting for CSF pTau181:A\u03b242, CSF neurofilament, CSF neurogranin, CSF growth-associated protein 43, age, APOE4 and sex. We also developed a plasma proteomic signature of CI, which we evaluated in 13,401 samples, which partly recapitulated CSF YWHAG:NPTX2. Overall, our findings underscore CSF YWHAG:NPTX2 as a robust prognostic biomarker for cognitive resilience versus AD onset and progression, highlight the potential of plasma proteomics in replacing CSF measurement and further implicate synapse dysfunction as a core driver of AD dementia.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s41591-025-03798-1",
@@ -409,7 +417,8 @@ window.SITE_DATA = {
    "cites": 103,
    "preprint": false,
    "abstract": "Plasma proteins derived from specific organs can estimate organ age and mortality, but their sensitivity to environmental factors and their robustness in forecasting onset of organ diseases and mortality remain unclear. To address this gap, we estimate the biological age of 11 organs using plasma proteomics data (2,916 proteins) from 44,498 individuals in the UK Biobank. Organ age estimates were sensitive to lifestyle factors and medications and were associated with future onset (within 17 years' follow-up) of a range of diseases, including heart failure, chronic obstructive pulmonary disease, type 2 diabetes and Alzheimer's disease. Notably, having an especially aged brain posed a risk of Alzheimer's disease (hazard ratio (HR) = 3.1) that was similar to carrying one copy of APOE4, the strongest genetic risk factor for sporadic Alzheimer's disease, whereas a youthful brain (HR = 0.26) provided protection that was similar to carrying two copies of APOE2, independent of APOE genotype. Accrual of aged organs progressively increased mortality risk (2-4 aged organs, HR = 2.3; 5-7 aged organs, HR = 4.5; 8+ aged organs, HR = 8.3), whereas youthful brains and immune systems were uniquely associated with longevity (youthful brain, HR = 0.60 for mortality risk; youthful immune system, HR = 0.58; youthful both, HR = 0.44). Altogether, these findings support the use of plasma proteins for monitoring of organ health and point to the brain and immune systems as key targets for longevity interventions.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1016/j.neuron.2025.02.014",
@@ -455,7 +464,8 @@ window.SITE_DATA = {
    "cites": 58,
    "preprint": false,
    "abstract": "Changes in \u03b2-amyloid (A\u03b2) and hyperphosphorylated tau (T) in brain and cerebrospinal fluid (CSF) precede Alzheimer's disease (AD) symptoms, making the CSF proteome a potential avenue to understand disease pathophysiology and facilitate reliable diagnostics and therapies. Using the AT framework and a three-stage study design (discovery, replication, and meta-analysis), we identified 2,173 analytes (2,029 unique proteins) dysregulated in AD. Of these, 865 (43%) were previously reported, and 1,164 (57%) are novel. The identified proteins cluster in four different pseudo-trajectories groups spanning the AD continuum and were enriched in pathways including neuronal death, apoptosis, and tau phosphorylation (early stages), microglia dysregulation and endolysosomal dysfunction (mid stages), brain plasticity and longevity (mid stages), and microglia-neuron crosstalk (late stages). Using machine learning, we created and validated highly accurate and replicable (area under the curve [AUC] > 0.90) models that predict AD biomarker positivity and clinical status. These models can also identify people that will convert to AD.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1016/j.landig.2025.01.006",
@@ -483,7 +493,8 @@ window.SITE_DATA = {
    "cites": 54,
    "preprint": false,
    "abstract": "Background Biological ageing is known to vary among different organs within an individual, but the extent to which advanced ageing of specific organs increases the risk of age-related diseases in the same and other organs remains poorly understood. Methods In this observational cohort study, to assess the biological age of an individual's organs relative to those of same-aged peers, ie, organ age gaps, we collected plasma samples from 6235 middle-aged (age 45-69 years) participants of the Whitehall II prospective cohort study in London, UK, in 1997-99. Age gaps of nine organs were determined from plasma proteins via SomaScan (SomaLogic; Boulder, CO, USA) using the Python package organage. Following this assessment, we tracked participants for 20 years through linkage to national health records. Study outcomes were 45 individual age-related diseases and multimorbidity. Findings Over 123 712 person-years of observation (mean follow-up 19\u00b78 years [SD 3\u00b76]), after excluding baseline disease cases and adjusting for age, sex, ethnicity, and age gaps in organs other than the one under investigation, individuals with large organ age gaps showed an increased risk of 30 diseases. Six diseases were exclusively associated with accelerated ageing of their respective organ: liver failure (hazard ratio [HR] per SD increment in the organ age gap 2\u00b713 [95% CI 1\u00b741-3\u00b722]), dilated cardiomyopathy (HR 1\u00b765 [1\u00b728-2\u00b712]), chronic heart failure (HR 1\u00b752 [1\u00b740-1\u00b765]), lung cancer (HR 1\u00b729 [1\u00b704-1\u00b759]), agranulocytosis (HR 1\u00b727 [1\u00b707-1\u00b751]), and lymphatic node metastasis (HR 1\u00b723 [1\u00b706-1\u00b743]). 24 diseases were associated with more than one organ age gap or with organ age gaps not directly related to the disease location. Larger age gaps were also associated with elevated HRs of developing two or more diseases affecting different organs within the same individual (ie, multiorgan multimorbidity): 2\u00b703 (1\u00b751-2\u00b774) for the arterial age gap, 1\u00b778 (1\u00b748-2\u00b714) for the kidney age gap, 1\u00b752 (1\u00b738-1\u00b768) for the heart age gap, 1\u00b752 (1\u00b712-2\u00b706) for the brain age gap, 1\u00b743 (1\u00b716-1\u00b778) for the pancreas age gap, 1\u00b737 (1\u00b717-1\u00b761) for the lung age gap, 1\u00b736 (1\u00b726-1\u00b746) for the immune system age gap, and 1\u00b730 (1\u00b718-1\u00b742) for the liver age gap. Interpretation Advanced proteomic organ ageing is associated with the long-term risk of age-related diseases. In most cases, faster ageing of a specific organ increases susceptibility to morbidity affecting multiple organs. Funding Wellcome Trust, UK Medical Research Council, National Institute for Aging, Academy of Finland.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s41591-025-03831-3",
@@ -521,7 +532,8 @@ window.SITE_DATA = {
    "cites": 42,
    "preprint": false,
    "abstract": "The brain barrier system, including the choroid plexus, meninges and brain vasculature, regulates substrate transport and maintains differential protein concentrations between blood and cerebrospinal fluid (CSF). Aging and neurodegeneration disrupt brain barrier function, but proteomic studies of the effects on blood-CSF protein balance are limited. Here we used SomaScan proteomics to characterize paired CSF and plasma samples from 2,171 healthy or cognitively impaired older individuals from multiple cohorts, including the Global Neurodegeneration Proteomics Consortium. We identified proteins with correlated CSF and plasma levels that are produced primarily outside the brain and are enriched for structural domains that may enable their transport across brain barriers. CSF to plasma ratios of 848 proteins increased with aging in healthy control individuals, including complement and coagulation proteins, chemokines and proteins linked to neurodegeneration, whereas 64 protein ratios decreased with age, suggesting substrate-specific barrier regulation. Notably, elevated CSF to plasma ratios of peripherally derived or vascular-associated proteins, including DCUN1D1, MFGE8 and VEGFA, were associated with preserved cognitive function. Genome-wide association studies identified genetic loci associated with CSF to plasma ratios of 241 proteins, many of which have known disease associations, including FCN2, the collagen-like domain of which may facilitate blood-CSF transport. Overall, this work provides molecular insight into the human brain barrier system and its disruption with age and disease, with implications for the development of brain-permeable therapeutics.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s43587-025-00872-8",
@@ -576,7 +588,8 @@ window.SITE_DATA = {
    "cites": 38,
    "preprint": false,
    "abstract": "Proteomic studies have been instrumental in identifying brain, cerebrospinal fluid and plasma proteins associated with Alzheimer's disease (AD). Here, we comprehensively examined 6,905 aptamers corresponding to 6,106 unique proteins in plasma in more than 3,300 well-characterized individuals to identify new proteins, pathways and predictive models for AD. We identified 416 proteins (294 new) associated with clinical AD status and validated the findings in two external datasets representing more than 7,000 samples. AD-related proteins reflected blood-brain barrier disruption and other processes implicated in AD, such as lipid dysregulation or immune responses. A machine learning model was used to identify a set of seven proteins that were highly predictive of both clinical AD (area under the curve (AUC) of >0.72) and biomarker-defined AD status (AUC of >0.88), which were replicated in multiple external cohorts and orthogonal platforms. These findings underscore the potential of using plasma proteins as biomarkers for the early detection and monitoring of AD and for guiding treatment decisions.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1016/j.celrep.2025.116624",
@@ -608,7 +621,8 @@ window.SITE_DATA = {
    "cites": 13,
    "preprint": false,
    "abstract": "The cerebellum, essential for motor coordination and increasingly recognized for its role in cognition, is typically considered more resilient to aging and largely spared from hallmark Alzheimer's disease (AD) pathology. However, transcriptomic analyses across fifteen mouse brain regions revealed that the cerebellum undergoes some of the earliest and most pronounced age-related changes. To investigate cerebellar aging, we applied single-nucleus RNA sequencing (RNA-seq), microglial bulk RNA-seq, and multiplexed error-robust fluorescence in situ hybridization (MERFISH)-based spatial transcriptomics. Microglia showed the most prominent changes, including elevated expression of a neuroprotective signature and reduced expression of a lipid-droplet-accumulating signature compared to hippocampal microglia. Spatial analyses further revealed that aged cerebellar microglia were positioned in close proximity to granule cells. Utilizing this relationship, we identified a proximity-dependent transcriptional state defined by the neuron-associated microglial signature. This signature reveals a region-specific microglial adaptation, highlighting cerebellar reorganization with age and potential resilience to AD.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s41588-024-01972-8",
@@ -667,7 +681,8 @@ window.SITE_DATA = {
    "cites": 76,
    "preprint": false,
    "abstract": "The integration of quantitative trait loci (QTLs) with disease genome-wide association studies (GWASs) has proven successful in prioritizing candidate genes at disease-associated loci. QTL mapping has been focused on multi-tissue expression QTLs or plasma protein QTLs (pQTLs). We generated a cerebrospinal fluid (CSF) pQTL atlas by measuring 6,361 proteins in 3,506 samples. We identified 3,885 associations for 1,883 proteins, including 2,885 new pQTLs, demonstrating unique genetic regulation in CSF. We identified CSF-enriched pleiotropic regions on chromosome (chr)3q28 near OSTN and chr19q13.32 near APOE that were enriched for neuron specificity and neurological development. We integrated our associations with Alzheimer's disease (AD) through proteome-wide association study (PWAS), colocalization and Mendelian randomization and identified 38 putative causal proteins, 15 of which have drugs available. Finally, we developed a proteomics-based AD prediction model that outperforms genetics-based models. These findings will be instrumental to further understand the biology and identify causal and druggable proteins for brain and neurological traits.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1186/s13024-023-00687-4",
@@ -717,7 +732,8 @@ window.SITE_DATA = {
    "cites": 55,
    "preprint": false,
    "abstract": "Abstract Triggering receptor expressed on myeloid cells 2 (TREM2) plays a critical role in microglial activation, survival, and apoptosis, as well as in Alzheimer\u2019s disease (AD) pathogenesis. We previously reported the MS4A locus as a key modulator for soluble TREM2 (sTREM2) in cerebrospinal fluid (CSF). To identify additional novel genetic modifiers of sTREM2, we performed the largest genome-wide association study (GWAS) and identified four loci for CSF sTREM2 in 3,350 individuals of European ancestry. Through multi-ethnic fine mapping, we identified two independent missense variants (p.M178V in MS4A4A and p.A112T in MS4A6A) that drive the association in MS4A locus and showed an epistatic effect for sTREM2 levels and AD risk. The novel TREM2 locus on chr 6 contains two rare missense variants (rs75932628 p.R47H, P =7.16\u00d710 -19; rs142232675 p.D87N, P =2.71\u00d710 -10) associated with sTREM2 and AD risk. The third novel locus in the TGFBR2 and RBMS3 gene region (rs73823326, P =3.86\u00d710 -9) included a regulatory variant with a microglia-specific chromatin loop for the promoter of TGFBR2. Using cell-based assays we demonstrate that overexpression and knock-down of TGFBR2, but not RBMS3, leads to significant changes of sTREM2. The last novel locus is located on the APOE region (rs11666329, P =2.52\u00d710 -8), but we demonstrated that this signal was independent of APOE genotype. This signal colocalized with cis-eQTL of NECTIN2 in the brain cortex and cis-pQTL of NECTIN2 in CSF. Overexpression of NECTIN2 led to an increase of sTREM2 supporting the genetic findings. To our knowledge, this is the largest study to date aimed at identifying genetic modifiers of CSF sTREM2. This study provided novel insights into the MS4A and TREM2 loci, two well-known AD risk genes, and identified TGFBR2 and NECTIN2 as additional modulators involved in TREM2 biology.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1093/pnasnexus/pgae499",
@@ -815,7 +831,8 @@ window.SITE_DATA = {
    "cites": 55,
    "preprint": false,
    "abstract": "Abstract To gain insight into how researchers of aging perceive the process they study, we conducted a survey among experts in the field. While highlighting some common features of aging, the survey exposed broad disagreement on the foundational issues. What is aging? What causes it? When does it begin? What constitutes rejuvenation? Not only was there no consensus on these and other core questions, but none of the questions received a majority opinion\u2014even regarding the need for consensus itself. Despite many researchers believing they understand aging, their understanding diverges considerably. Importantly, as different processes are labeled as \u201caging\u201d by researchers, different experimental approaches are prioritized. The survey shed light on the need to better define which aging processes this field should target and what its goals are. It also allowed us to categorize contemporary views on aging and rejuvenation, revealing critical, yet largely unanswered, questions that appear disconnected from the current research focus. Finally, we discuss ways to address the disagreement, which we hope will ultimately aid progress in the field.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s41586-023-06802-1",
@@ -868,7 +885,8 @@ window.SITE_DATA = {
    "cites": 613,
    "preprint": false,
    "abstract": "Abstract Animal studies show aging varies between individuals as well as between organs within an individual 1\u20134, but whether this is true in humans and its effect on age-related diseases is unknown. We utilized levels of human blood plasma proteins originating from specific organs to measure organ-specific aging differences in living individuals. Using machine learning models, we analysed aging in 11 major organs and estimated organ age reproducibly in five independent cohorts encompassing 5,676 adults across the human lifespan. We discovered nearly 20% of the population show strongly accelerated age in one organ and 1.7% are multi-organ agers. Accelerated organ aging confers 20\u201350% higher mortality risk, and organ-specific diseases relate to faster aging of those organs. We find individuals with accelerated heart aging have a 250% increased heart failure risk and accelerated brain and vascular aging predict Alzheimer\u2019s disease (AD) progression independently from and as strongly as plasma pTau-181 (ref. 5), the current best blood-based biomarker for AD. Our models link vascular calcification, extracellular matrix alterations and synaptic protein shedding to early cognitive decline. We introduce a simple and interpretable method to study organ aging using plasma proteomics data, predicting diseases and aging effects.",
-   "page": true
+   "page": true,
+   "shared": 2
   },
   {
    "doi": "10.1126/scitranslmed.abq5923",
@@ -911,7 +929,8 @@ window.SITE_DATA = {
    "cites": 94,
    "preprint": false,
    "abstract": "Proteomic studies for Alzheimer\u2019s disease (AD) are instrumental in identifying AD pathways but often focus on single tissues and sporadic AD cases. Here, we present a proteomic study analyzing 1305 proteins in brain tissue, cerebrospinal fluid (CSF), and plasma from patients with sporadic AD, TREM2 risk variant carriers, patients with autosomal dominant AD (ADAD), and healthy individuals. We identified 8 brain, 40 CSF, and 9 plasma proteins that were altered in individuals with sporadic AD, and we replicated these findings in several external datasets. We identified a proteomic signature that differentiated TREM2 variant carriers from both individuals with sporadic AD and healthy individuals. The proteins associated with sporadic AD were also altered in patients with ADAD, but with a greater effect size. Brain-derived proteins associated with ADAD were also replicated in additional CSF samples. Enrichment analyses highlighted several pathways, including those implicated in AD (calcineurin and Apo E), Parkinson\u2019s disease (\u03b1-synuclein and LRRK2), and innate immune responses (SHC1, ERK-1, and SPP1). Our findings suggest that combined proteomics across brain tissue, CSF, and plasma can be used to identify markers for sporadic and genetically defined AD.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1038/s41576-022-00511-7",
@@ -931,7 +950,8 @@ window.SITE_DATA = {
    "cites": 550,
    "preprint": false,
    "abstract": "Age is the key risk factor for diseases and disabilities of the elderly. Efforts to tackle age-related diseases and increase healthspan have suggested targeting the ageing process itself to 'rejuvenate' physiological functioning. However, achieving this aim requires measures of biological age and rates of ageing at the molecular level. Spurred by recent advances in high-throughput omics technologies, a new generation of tools to measure biological ageing now enables the quantitative characterization of ageing at molecular resolution. Epigenomic, transcriptomic, proteomic and metabolomic data can be harnessed with machine learning to build 'ageing clocks' with demonstrated capacity to identify new biomarkers of biological ageing.",
-   "page": true
+   "page": true,
+   "shared": 2
   },
   {
    "doi": "10.1016/j.cell.2022.11.019",
@@ -967,7 +987,8 @@ window.SITE_DATA = {
    "cites": 195,
    "preprint": false,
    "abstract": "Cerebrospinal fluid (CSF) contains a tightly regulated immune system. However, knowledge is lacking about how CSF immunity is altered with aging or neurodegenerative disease. Here, we performed single-cell RNA sequencing on CSF from 45 cognitively normal subjects ranging from 54 to 82 years old. We uncovered an upregulation of lipid transport genes in monocytes with age. We then compared this cohort with 14 cognitively impaired subjects. In cognitively impaired subjects, downregulation of lipid transport genes in monocytes occurred concomitantly with altered cytokine signaling to CD8 T cells. Clonal CD8 T effector memory cells upregulated C-X-C motif chemokine receptor 6 (CXCR6) in cognitively impaired subjects. The CXCR6 ligand, C-X-C motif chemokine ligand 16 (CXCL16), was elevated in the CSF of cognitively impaired subjects, suggesting CXCL16-CXCR6 signaling as a mechanism for antigen-specific T cell entry into the brain. Cumulatively, these results reveal cerebrospinal fluid immune dysregulation during healthy brain aging and cognitive impairment.",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1126/science.abf7266",
@@ -1002,7 +1023,8 @@ window.SITE_DATA = {
    "cites": 219,
    "preprint": false,
    "abstract": "Autoimmunity in Lewy body dementia Lewy body dementia (LBD) is a brain disease that leads to progressive decline in thinking, movement, and independent function. It results from the build-up of microscopic deposits called Lewy bodies, which develop from the aggregation of a misfolded protein called \u03b1-synuclein. Gate et al. observed immune cells known as T cells in the brains of LBD patients (see the Perspective by Krot and Rolls). Genomics analysis revealed that T cells traffic to the LBD brain and are associated with neuronal damage. When stimulated with \u03b1-synuclein, LBD patient T cells secrete an inflammatory protein known to damage neurons. These findings suggest an unexpected detrimental role of the immune system in LBD. \u2014SMH",
-   "page": true
+   "page": true,
+   "shared": 0
   },
   {
    "doi": "10.1186/s13024-021-00423-w",
@@ -1026,7 +1048,8 @@ window.SITE_DATA = {
    "cites": 19,
    "preprint": false,
    "abstract": "Abstract Background Cerebrospinal fluid (CSF) provides basic mechanical and immunological protection to the brain. Historically, analysis of CSF has focused on protein changes, yet recent studies have shed light on cellular alterations. Evidence now exists for involvement of intrathecal T cells in the pathobiology of neurodegenerative diseases. However, a standardized method for long-term preservation of CSF immune cells is lacking. Further, the functional role of CSF T cells and their cognate antigens in neurodegenerative diseases are largely unknown. Results We present a method for long-term cryopreservation of CSF immune cells for downstream single cell RNA and T cell receptor sequencing (scRNA-TCRseq) analysis. We observe preservation of CSF immune cells, consisting primarily of memory CD4 + and CD8 + T cells. We then utilize unbiased bioinformatics approaches to quantify and visualize TCR sequence similarity within and between disease groups. By this method, we identify clusters of disease-associated, antigen-specific TCRs from clonally expanded CSF T cells of patients with neurodegenerative diseases. Conclusions Here, we provide a standardized approach for long-term storage of CSF immune cells. Additionally, we present unbiased bioinformatic approaches that will facilitate the discovery of target antigens of clonally expanded T cells in neurodegenerative diseases. These novel methods will help improve our understanding of adaptive immunity in the central nervous system.",
-   "page": true
+   "page": true,
+   "shared": 0
   }
  ],
  "preprints": [
@@ -1072,6 +1095,7 @@ window.SITE_DATA = {
    "preprint": true,
    "abstract": "SUMMARY Neurodegenerative diseases are often accompanied by systemic comorbidities, including changes in bone health, but the molecular relationship between neurodegeneration, skeletal decline, and cellular senescence remains poorly understood. In this study, we investigated sex-specific changes in circulating bone- and senescence-related proteins across the spectrum of Alzheimer\u2019s disease(AD), Lewbody dementia(LB) and Parkinson\u2019s disease(PD). Plasma proteomic profiling was performed on samples from 408 participants deeply phenotyped for neurodegenerative diseases, followed by differential protein and pathway analyses. This study reveals sex-dependent alterations in bone and senescence-related circulating proteins in AD-related, PD and LB-related neurodegenerative diseases, providing insights into the complex relationship between neurodegeneration and bone health. Several candidate proteins were also associated with established plasma neurodegeneration biomarkers, particularly pTau181. Pathway analyses revealed shared mitochondrial and metabolic dysfunction across neurodegenerative diseases, with disease-specific features including vesicle trafficking disruption in AD and inflammatory-senescence pathways in LB, plus sex-divergent patterns in inflammatory signaling and bone-related pathways.",
    "page": true,
+   "shared": 0,
    "server": "bioRxiv / medRxiv"
   },
   {
@@ -1106,6 +1130,7 @@ window.SITE_DATA = {
    "preprint": true,
    "abstract": "Abstract Earlier menopause is a risk factor for several age-related diseases, including dementia. The biological pathways linking menopause timing to later-life brain aging are not understood. Leveraging large-scale plasma proteomics in postmenopausal women from the UK Biobank (N=15,012), earlier menopause was associated with upregulation of pro-inflammatory and extracellular matrix degradation pathways, plus accelerated aging across proteomic clocks of organ and cellular aging, including brain and oligodendrocyte aging. Elevated GDF15, a canonical aging marker, was the top protein correlate of earlier menopause. We observed robust replication of menopause timing proteomic shifts in the Women\u2019s Health Initiative Long Life Study (N=1,210). In UKB, proteins associated with earlier menopause, including GDF15, exhibited concordant associations with incident dementia risk and brain atrophy, cerebral small vessel disease burden, and white matter microstructural integrity. Collectively, our findings identify proteomic signatures linking ovarian aging to brain aging, providing a framework to inform interventions to reduce dementia risk.",
    "page": true,
+   "shared": 0,
    "server": "Research Square"
   },
   {
@@ -1143,6 +1168,7 @@ window.SITE_DATA = {
    "preprint": true,
    "abstract": "Abstract Recent developments in proteomics have connected organ aging with dementia risk. The present longitudinal study extends this line of research by demonstrating that midlife organ age and pace of organ aging over multiple decades from midlife to late life are associated with future dementia risk and neurodegeneration, independent of the late-life organ age. We show further that advanced multi-organ aging, especially the combination of brain and heart/muscle aging, acts synergistically as a risk factor for dementia. Midlife proteome-wide analysis and Mendelian randomization identified a set of mostly non-brain-specific proteins driving or slowing the pace of multi-decade brain aging. Among these is tumor necrosis factor receptor superfamily member 1B (TNFRSF1B), causally implicated in the accelerated pace of brain, immune, muscle, and pancreas aging. Two other proteins associated with pace of brain aging, GM2 ganglioside activator (GM2A) and limbic system-associated membrane protein (LSAMP), showed putative causal roles in multiple neurologic diseases.",
    "page": true,
+   "shared": 0,
    "server": "bioRxiv / medRxiv"
   },
   {
@@ -1195,6 +1221,7 @@ window.SITE_DATA = {
    "preprint": true,
    "abstract": "Abstract Neurodegenerative diseases (including Alzheimer\u2019s disease, Parkinson\u2019s disease, Frontotemporal dementia, and Dementia with Lewy bodies) pose diagnostic challenges due to overlapping pathology and clinical heterogeneity. We leveraged proteomic data from more than 21,000 cerebrospinal fluid and plasma samples to develop and validate explainable, boosting-based multi-disease AI classifiers. The models achieved weighted AUCs in the testing datasets of 0.97 for CSF and 0.88 for plasma, equivalent to traditional biomarkers. The model was validated with neuropathological and clinical data, confirming robust generalizability without any retraining. Using zero-shot learning, we classified disease subtypes including autosomal dominant AD and prodromal PD and clarified disease states for those with conflicting clinical information. The model also showed the ability to prioritize cognitively normal individuals at disease risk. This framework enabled the identification and quantification of continuous, individual-level disease probabilities that allow for the quantification of overlap across diseases and co-pathologies within an individual. Through this work, we establish a benchmark computational framework for enhancing diagnostic precision in NDs.",
    "page": true,
+   "shared": 0,
    "server": "bioRxiv / medRxiv"
   }
  ]

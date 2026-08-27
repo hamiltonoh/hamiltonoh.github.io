@@ -19,7 +19,11 @@ crawler-only variant.
 
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from refresh_publications import CO_FIRST   # noqa: E402  (one source of truth)
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "site-data.js"
@@ -41,6 +45,9 @@ preprints = load("preprints.json")
 # that exist. Probing and letting them 404 works, but fills the console with errors.
 for pub in pubs + preprints:
     pub["page"] = (ROOT / "images" / "pubs" / f"{slug(pub['doi'])}.jpg").exists()
+    # Stamped here as well as in refresh_publications.py so that adding a paper to
+    # CO_FIRST takes effect on the next build, without a network refresh.
+    pub["shared"] = CO_FIRST.get(pub["doi"], 0)
 
 # Preprint servers aren't named in Crossref's container-title, so derive a label.
 SERVERS = {"10.1101": "bioRxiv / medRxiv", "10.64898": "bioRxiv / medRxiv",
@@ -123,11 +130,14 @@ def author_line(pub):
         keep.append(len(names) - 1)
         keep = sorted({i for i in keep if 0 <= i < len(names)})
 
+    shared = pub.get("shared") or 0
     out, previous = "", -1
     for slot, i in enumerate(keep):
         if slot:
             out += ", " if i == previous + 1 else ", … "
         mark = initials(names[i])
+        if i < shared:
+            mark += "*"          # journal convention for equal contribution
         out += f"<b>{mark}</b>" if pub.get("pos") == i + 1 else mark
         previous = i
     return out
@@ -138,6 +148,8 @@ def fallback_list(items):
     for pub in items:
         venue = pub.get("server") if pub.get("preprint") else pub.get("journal")
         bits = [b for b in (escape(venue), str(pub.get("year") or "")) if b]
+        if pub.get("shared"):
+            bits.append("(* equal contribution)")
         rows.append(
             "        <li>"
             f'<cite><a href="https://doi.org/{escape(pub["doi"])}">'
