@@ -42,6 +42,7 @@ EXTRA_DOIS = (
     "10.1016/j.celrep.2025.116624",  # Cerebellar microglia with aging, Cell Reports 2025
     "10.1016/j.landig.2025.01.006",  # Whitehall II organ ageing, Lancet Digital Health 2025
     "10.1002/advs.202513872",        # APOE-stratified proteomics/metabolomics, Advanced Science
+    "10.64898/2026.08.22.746470",    # CSF YWHAG:NPTX2 ratio in FTLD, bioRxiv preprint 2026
 )
 
 # Preprints whose published version is already listed. Titles change enough on
@@ -132,6 +133,11 @@ def crossref(doi):
         "title": clean(msg.get("title", [""])[0]),
         "journal": journal or "Preprint",
         "year": msg.get("issued", {}).get("date-parts", [[None]])[0][0],
+        # Full posted/issued date as YYYY-MM-DD, so preprints can be ordered newest first.
+        "date": "-".join(f"{n:02d}" for n in (msg.get("posted") or msg.get("issued") or {})
+                         .get("date-parts", [[]])[0] if n),
+        # Preprint records name their server (bioRxiv, medRxiv, Research Square) here.
+        "server": clean(((msg.get("institution") or [{}])[0]).get("name", "")),
         "pos": position,
         "n": len(authors),
         "authors": [clean(a) for a in authors],

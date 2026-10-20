@@ -49,11 +49,16 @@ for pub in pubs + preprints:
     # CO_FIRST takes effect on the next build, without a network refresh.
     pub["shared"] = CO_FIRST.get(pub["doi"], 0)
 
-# Preprint servers aren't named in Crossref's container-title, so derive a label.
-SERVERS = {"10.1101": "bioRxiv / medRxiv", "10.64898": "bioRxiv / medRxiv",
-           "10.21203": "Research Square"}
+# Crossref names the server in the preprint's `institution`, which refresh_publications.py
+# stores as `server`. Fall back on the DOI prefix for records that lack it.
+SERVERS = {"10.1101": "bioRxiv", "10.64898": "bioRxiv", "10.21203": "Research Square"}
 for pub in preprints:
-    pub["server"] = next((v for k, v in SERVERS.items() if pub["doi"].startswith(k)), "Preprint")
+    pub["server"] = pub.get("server") or next(
+        (v for k, v in SERVERS.items() if pub["doi"].startswith(k)), "Preprint")
+
+# Newest preprint first, by posted date (year alone for records refreshed before dates
+# were stored).
+preprints.sort(key=lambda p: p.get("date") or str(p.get("year") or ""), reverse=True)
 
 # A preprint with no first page has no PDF behind it; leave it off the site rather
 # than showing a bare title tile.
